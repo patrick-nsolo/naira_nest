@@ -13,12 +13,12 @@ const Navbar = () => {
             <li>Cash</li>
             <li>Bonds</li>
             <li>Stocks</li>
-            <li></li>
+            <li>Automated Investing</li>
+            <li>Learn</li>
         </ul>
         <div className='nav-login-get-started'>
             <button>Login</button>
             <button>Get Started</button>
-
         </div>
     </div>
   )
