@@ -1,8 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Navbar.css';
 import logo from '../Assets/naira-nest-logo.png';
 
 const Navbar = () => {
+    //Add state to control navigation menu dropdown
+    const [showInvestingDropdown, setShowInvestingDropdown] = useState(false);
+    const [showLearnDropdown, setShowLearnDropdown] = useState(false);
+
+
+
   return (
     <div className = 'navbar'>
         <div className='nav-logo'>
