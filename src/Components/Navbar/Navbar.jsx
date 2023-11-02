@@ -19,7 +19,20 @@ const Navbar = () => {
             <li>Cash</li>
             <li>Bonds</li>
             <li>Stocks</li>
-            <li>Automated Investing</li>
+            <li
+                onMouseEnter = {() => setShowInvestingDropdown(true)}
+                onMouseLeave = {() => setShowInvestingDropdown(false)}
+            >Automated Investing
+            {showInvestingDropdown && (
+                <div className = 'dropdown-menu'>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            )}
+            </li>
             <li>Learn</li>
         </ul>
         <div className='nav-login-get-started'>
