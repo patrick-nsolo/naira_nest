@@ -9,13 +9,17 @@ const Navbar = () => {
             <img src = {logo} alt = ''/>
             <p><span>NAIRA</span> NEST</p>
         </div>
-        <ul>
+        <ul className='nav-menu'>
             <li>Cash</li>
             <li>Bonds</li>
             <li>Stocks</li>
             <li></li>
         </ul>
-      
+        <div className='nav-login-get-started'>
+            <button>Login</button>
+            <button>Get Started</button>
+
+        </div>
     </div>
   )
 }
