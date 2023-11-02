@@ -5,8 +5,11 @@ import logo from '../Assets/naira-nest-logo.png';
 const Navbar = () => {
   return (
     <div className = 'navbar'>
-        <img src = {logo} alt = ''/>
-        <p>NAIRA NEST</p>
+        <div className='nav-logo'>
+            <img src = {logo} alt = ''/>
+            <p>NAIRA NEST</p>
+        </div>
+        
       
     </div>
   )
