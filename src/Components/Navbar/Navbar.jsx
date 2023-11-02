@@ -18,7 +18,6 @@ const Navbar = () => {
         <ul className='nav-menu'>
             <li>Cash</li>
             <li>Bonds</li>
-            <li>Stocks</li>
             <li
                 onMouseEnter = {() => setShowInvestingDropdown(true)}
                 onMouseLeave = {() => setShowInvestingDropdown(false)}
@@ -34,6 +33,7 @@ const Navbar = () => {
                 </div>
             )}
             </li>
+            <li>Stocks</li>
             <li
                 onMouseEnter = {() => setShowLearnDropdown(true)}
                 onMouseLeave = {() => setShowLearnDropdown(false)}
