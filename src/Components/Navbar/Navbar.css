@@ -11,7 +11,7 @@
     cursor: pointer;
 }
 .nav-logo img{
-    width:200px;
+    width:150px;
 }
 .nav-logo p{
     font-size: 1.5rem;
@@ -27,7 +27,7 @@
     align-items: center;
     gap: 30px;
     color: #ffd700;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 600;
 }
 .nav-menu li:hover{
@@ -42,7 +42,7 @@
     border: none;
     background: transparent;
     border-radius: 25px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     background: #ffd700;
     width:100px;
     height: 45px;
@@ -51,7 +51,7 @@
     background: linear-gradient(60deg, #007f00, #2e712e 60%);
     border: none;
     border-radius: 25px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     width:150px;
     height: 45px;
     color:#fff;
