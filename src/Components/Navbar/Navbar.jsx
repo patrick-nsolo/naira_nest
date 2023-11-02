@@ -7,7 +7,7 @@ const Navbar = () => {
     <div className = 'navbar'>
         <div className='nav-logo'>
             <img src = {logo} alt = ''/>
-            <p>NAIRA NEST</p>
+            <p><span>NAIRA</span> NEST</p>
         </div>
         
       

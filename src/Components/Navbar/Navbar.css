@@ -1,7 +1,18 @@
+.navbar{
+    padding: 5px 30px 5px 30px;
+}
 .nav-logo{
     display:flex;
     align-items: center;
 }
 .nav-logo img{
     width:200px;
+}
+.nav-logo p{
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #ffd700;
+}
+.nav-logo p span{
+    color:#007f00;
 }
