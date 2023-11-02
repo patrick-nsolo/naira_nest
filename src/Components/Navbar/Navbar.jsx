@@ -9,7 +9,12 @@ const Navbar = () => {
             <img src = {logo} alt = ''/>
             <p><span>NAIRA</span> NEST</p>
         </div>
-        
+        <ul>
+            <li>Cash</li>
+            <li>Bonds</li>
+            <li>Stocks</li>
+            <li></li>
+        </ul>
       
     </div>
   )
