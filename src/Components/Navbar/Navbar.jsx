@@ -26,14 +26,29 @@ const Navbar = () => {
             {showInvestingDropdown && (
                 <div className = 'dropdown-menu'>
                     <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                        <li>Socially Responsible (SRI)</li>
+                        <li>Retirement (IRAs)</li>
+                        <li>College (529s)</li>
+                        <li>Explore all investments</li>
                     </ul>
                 </div>
             )}
             </li>
-            <li>Learn</li>
+            <li
+                onMouseEnter = {() => setShowLearnDropdown(true)}
+                onMouseLeave = {() => setShowLearnDropdown(false)}
+            >Learn
+            {showLearnDropdown && (
+                <div className = 'dropdown-menu'>
+                    <ul>
+                        <li>Socially Responsible (SRI)</li>
+                        <li>Retirement (IRAs)</li>
+                        <li>College (529s)</li>
+                        <li>Explore all investments</li>
+                    </ul>
+                </div>
+            )}
+            </li>
         </ul>
         <div className='nav-login-get-started'>
             <button className='login-btn'>Login</button>
