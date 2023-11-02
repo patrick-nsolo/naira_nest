@@ -17,8 +17,8 @@ const Navbar = () => {
             <li>Learn</li>
         </ul>
         <div className='nav-login-get-started'>
-            <button>Login</button>
-            <button>Get Started</button>
+            <button className='login-btn'>Login</button>
+            <button className='get-started'>Get Started</button>
         </div>
     </div>
   )
