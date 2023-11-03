@@ -76,5 +76,17 @@ li:hover .dropdown-menu{
 
 /*Hamburger Style*/
 .hamburger{
-    
+    display:flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+.hamburger-line{
+    width:25px;
+    height:2px;
+    background-color: #007f00;
+    margin:3px 0;
+    transition: all 0.3s;
+}
+.hamburger-line.open:nth-child(1){
+    transform:rotate
 }
