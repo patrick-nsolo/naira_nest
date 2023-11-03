@@ -26,15 +26,13 @@ const Navbar = () => {
             <div className={`hamburger-line ${isMenuOpen ? 'open' : ''}`}/>
             <div className={`hamburger-line ${isMenuOpen ? 'open' : ''}`}/>
         </div>
-        {isMenuOpen && (
-            <ul className='nav-menu'>
+        <ul className='nav-menu'>
             <li>Cash</li>
             <li>Bonds</li>
             <li
                 onMouseEnter = {() => setShowInvestingDropdown(true)}
                 onMouseLeave = {() => setShowInvestingDropdown(false)}
-            >
-            Automated Investing
+            >Automated Investing
             {showInvestingDropdown && (
                 <div className = 'dropdown-menu'>
                     <ul>
@@ -62,8 +60,7 @@ const Navbar = () => {
                 </div>
             )}
             </li>
-            </ul>
-        )}
+        </ul>
         <div className='nav-login-get-started'>
             <button className='login-btn'>Login</button>
             <button className='get-started'>Get Started</button>
