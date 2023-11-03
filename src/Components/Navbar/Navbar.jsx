@@ -3,6 +3,12 @@ import './Navbar.css';
 import logo from '../Assets/naira-nest-logo.png';
 
 const Navbar = () => {
+
+    //Hamburger
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
     //Add state to control navigation menu dropdown
     const [showInvestingDropdown, setShowInvestingDropdown] = useState(false);
     const [showLearnDropdown, setShowLearnDropdown] = useState(false);
@@ -15,13 +21,20 @@ const Navbar = () => {
             <img src = {logo} alt = ''/>
             <p><span>NAIRA</span> NEST</p>
         </div>
-        <ul className='nav-menu'>
+        <div className='hamburger' onclick={toggleMenu}>
+            <div className={`hamburger-line ${isMenuOpen ? 'open' : ''}`}/>
+            <div className={`hamburger-line ${isMenuOpen ? 'open' : ''}`}/>
+            <div className={`hamburger-line ${isMenuOpen ? 'open' : ''}`}/>
+        </div>
+        {isMenuOpen && (
+            <ul className='nav-menu'>
             <li>Cash</li>
             <li>Bonds</li>
             <li
                 onMouseEnter = {() => setShowInvestingDropdown(true)}
                 onMouseLeave = {() => setShowInvestingDropdown(false)}
-            >Automated Investing
+            >
+            Automated Investing
             {showInvestingDropdown && (
                 <div className = 'dropdown-menu'>
                     <ul>
@@ -49,7 +62,8 @@ const Navbar = () => {
                 </div>
             )}
             </li>
-        </ul>
+            </ul>
+        )}
         <div className='nav-login-get-started'>
             <button className='login-btn'>Login</button>
             <button className='get-started'>Get Started</button>
