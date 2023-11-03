@@ -47,7 +47,10 @@
     width:100px;
     height: 45px;
 }
-.nav-login-get-started .get-started{
+.login-btn:hover{
+    cursor: pointer;
+}
+.get-started{
     background: linear-gradient(60deg, #007f00, #2e712e 60%);
     border: none;
     border-radius: 25px;
@@ -55,4 +58,18 @@
     width:150px;
     height: 45px;
     color:#fff;
+}
+.get-started:hover{
+    cursor: pointer;
+}
+.dropdown-menu{
+    display: none;
+    position:absolute;
+    top:100%;
+    left:0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+li:hover .dropdown-menu{
+    display: block;
 }
